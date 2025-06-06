@@ -40,7 +40,7 @@
 </script>
 
 <div
-  class="max-w-screen-lg mx-auto grid md:grid-cols-3 grid-cols-1 gap-5 py-5 items-center justify-between px-5"
+  class="max-w-screen-lg mx-auto grid md:grid-cols-3 grid-cols-1 gap-5 py-5 items-center justify-between max-md:px-5"
   id="products"
 >
   {#each products as product}
@@ -71,7 +71,9 @@
         </p>
         <div class="card-actions justify-end">
           <button class="btn btn-block">View Information</button>
-          <button class="btn btn-success btn-block">Proceed to Checkout &rarr;</button>
+          <button class="btn btn-success btn-block"
+            >Proceed to Checkout &rarr;</button
+          >
         </div>
       </div>
     </div>
