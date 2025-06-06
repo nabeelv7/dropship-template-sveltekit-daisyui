@@ -18,11 +18,30 @@
       image:
         "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
     },
+    {
+      title: "Product 4",
+      price: 400,
+      image:
+        "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
+    },
+    {
+      title: "Product 5",
+      price: 500,
+      image:
+        "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
+    },
+    {
+      title: "Product 6",
+      price: 600,
+      image:
+        "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
+    },
   ];
 </script>
 
 <div
   class="max-w-screen-lg mx-auto grid md:grid-cols-3 grid-cols-1 gap-2 py-2 items-center justify-between"
+  id="products"
 >
   {#each products as product}
     <div class="card bg-base-100">

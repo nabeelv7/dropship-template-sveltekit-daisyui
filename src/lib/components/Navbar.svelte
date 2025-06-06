@@ -20,16 +20,16 @@
       <ul
         class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
       >
-        <li><a href="/">Products</a></li>
-        <li><a href="/">Testimonials</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
       </ul>
     </div>
     <a href="/" class="font-bold text-xl">daisyUI</a>
   </div>
   <div class="navbar-center hidden lg:flex">
     <ul class="menu menu-horizontal px-1">
-      <li><a href="/">Products</a></li>
-      <li><a href="/">Testimonials</a></li>
+      <li><a href="#products">Products</a></li>
+      <li><a href="#testimonials">Testimonials</a></li>
     </ul>
   </div>
   <div class="navbar-end">
