@@ -62,7 +62,7 @@
     days
   </div>
   <div class="bg-neutral rounded-box text-neutral-content flex flex-col p-2">
-    <span class="countdown text-shadow-sm text-shadow-pink-500 text-5xl">
+    <span class="countdown text-shadow-sm text-shadow-primary text-5xl">
       <span style={`--value:${hours}`} aria-live="polite" aria-label={hours}
         >{hours}</span
       >
@@ -78,7 +78,7 @@
     min
   </div>
   <div class="bg-neutral rounded-box text-neutral-content flex flex-col p-2">
-    <span class="countdown text-shadow-sm text-shadow-pink-500 text-5xl">
+    <span class="countdown text-shadow-sm text-shadow-primary text-5xl">
       <span style={`--value:${seconds}`} aria-live="polite" aria-label={seconds}
         >{seconds}</span
       >

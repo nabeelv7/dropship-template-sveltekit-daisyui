@@ -1,5 +1,5 @@
 <footer
-  class="footer sm:footer-horizontal bg-accent text-accent-content p-10 mt-10"
+  class="footer sm:footer-horizontal bg-neutral text-neutral-content p-10 mt-10"
 >
   <aside>
     <img src="icon.png" alt="logo" class="h-10 w-10" />

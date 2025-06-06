@@ -70,8 +70,8 @@
           >
         </p>
         <div class="card-actions justify-end">
-          <button class="btn btn-accent btn-block">Add to Cart</button>
           <button class="btn btn-block">View Information</button>
+          <button class="btn btn-success btn-block">Proceed to Checkout &rarr;</button>
         </div>
       </div>
     </div>
