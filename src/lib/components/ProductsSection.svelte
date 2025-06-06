@@ -40,7 +40,7 @@
 </script>
 
 <div
-  class="max-w-screen-lg mx-auto grid md:grid-cols-3 grid-cols-1 gap-5 py-5 items-center justify-between max-md:px-5"
+  class="max-w-screen-lg mx-auto grid md:grid-cols-3 grid-cols-1 gap-5 py-5 items-center justify-between max-md:px-5 mb-5"
   id="products"
 >
   {#each products as product}
