@@ -1,5 +1,6 @@
 <script>
   import Comparison from "$lib/components/Comparison.svelte";
+  import Cta from "$lib/components/CTA.svelte";
   import Faq from "$lib/components/FAQ.svelte";
   import Footer from "$lib/components/Footer.svelte";
   import Hero from "$lib/components/Hero.svelte";
@@ -12,4 +13,5 @@
 <Comparison />
 <Testimonials />
 <Faq />
+<Cta />
 <Footer />
