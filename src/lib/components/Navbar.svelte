@@ -1,3 +1,8 @@
+<script>
+  import { config } from "$lib/config";
+  const { store } = config;
+</script>
+
 <div class="navbar bg-base-200 max-w-screen-lg mx-auto">
   <div class="navbar-start">
     <div class="dropdown">
@@ -25,7 +30,7 @@
         <li><a href="#faq">FAQ</a></li>
       </ul>
     </div>
-    <a href="/" class="font-bold text-xl">daisyUI</a>
+    <a href="/" class="font-bold text-xl">{store.name}</a>
   </div>
   <div class="navbar-center hidden lg:flex">
     <ul class="menu menu-horizontal px-1">
@@ -36,7 +41,11 @@
   </div>
   <div class="navbar-end">
     <!-- Facebook -->
-    <button class="btn bg-[#1A77F2] text-white border-[#005fd8]">
+    <a
+      href={store.facebook_link}
+      target="_blank"
+      class="btn bg-[#1A77F2] text-white border-[#005fd8]"
+    >
       <svg
         aria-label="Facebook logo"
         width="16"
@@ -49,6 +58,6 @@
         ></path></svg
       >
       Contact on Facebook
-    </button>
+    </a>
   </div>
 </div>
