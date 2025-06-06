@@ -22,6 +22,7 @@
       >
         <li><a href="#products">Products</a></li>
         <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#faq">FAQ</a></li>
       </ul>
     </div>
     <a href="/" class="font-bold text-xl">daisyUI</a>
@@ -30,6 +31,7 @@
     <ul class="menu menu-horizontal px-1">
       <li><a href="#products">Products</a></li>
       <li><a href="#testimonials">Testimonials</a></li>
+      <li><a href="#faq">FAQ</a></li>
     </ul>
   </div>
   <div class="navbar-end">

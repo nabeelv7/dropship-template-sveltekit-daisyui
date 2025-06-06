@@ -1,4 +1,5 @@
 <script>
+  import Faq from "$lib/components/FAQ.svelte";
   import Hero from "$lib/components/Hero.svelte";
   import ProductsSection from "$lib/components/ProductsSection.svelte";
   import Testimonials from "$lib/components/Testimonials.svelte";
@@ -7,3 +8,4 @@
 <Hero />
 <ProductsSection />
 <Testimonials />
+<Faq />
