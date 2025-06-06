@@ -49,7 +49,9 @@
               />
             </div>
           </div>
-          <p class="text-base-content/80">&nbsp;-&nbsp;{testimonial.name}</p>
+          <p class={i == 1 ? "text-secondaey-content" : "text-base-content/80"}>
+            &nbsp;-&nbsp;{testimonial.name}
+          </p>
         </div>
       </div>
     {/each}

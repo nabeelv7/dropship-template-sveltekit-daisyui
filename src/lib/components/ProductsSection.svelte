@@ -52,6 +52,13 @@
         />
       </figure>
       <div class="card-body space-y-4">
+        <div class="flex">
+          <img src="star.svg" alt="&star;" class="h-6 w-6" />
+          <img src="star.svg" alt="&star;" class="h-6 w-6" />
+          <img src="star.svg" alt="&star;" class="h-6 w-6" />
+          <img src="star.svg" alt="&star;" class="h-6 w-6" />
+          <img src="star.svg" alt="&star;" class="h-6 w-6" />
+        </div>
         <h2 class="card-title text-2xl">{product.title}</h2>
         <p class="font-extrabold flex justify-between items-center">
           <span class="font-bold line-through text-xl"
@@ -63,7 +70,8 @@
           >
         </p>
         <div class="card-actions justify-end">
-          <button class="btn btn-accent btn-block">Buy Now</button>
+          <button class="btn btn-accent btn-block">Add to Cart</button>
+          <button class="btn btn-block">View Information</button>
         </div>
       </div>
     </div>
