@@ -1,22 +1,39 @@
 <script>
   import { onMount } from "svelte";
 
-  const TEN_DAYS_MS = 10 * 24 * 60 * 60 * 1000;
+  const TARGET_DAYS = [10, 20, 30];
 
-  let targetTime = Date.now() + TEN_DAYS_MS;
+  let targetTime;
   let days = 0,
     hours = 0,
     minutes = 0,
     seconds = 0;
 
+  function getNextTargetDate() {
+    const now = new Date();
+    const currentDay = now.getDate();
+    const currentMonth = now.getMonth();
+    const currentYear = now.getFullYear();
+
+    for (let day of TARGET_DAYS) {
+      if (currentDay < day) {
+        return new Date(currentYear, currentMonth, day, 0, 0, 0, 0).getTime();
+      }
+    }
+
+    // After 30th, go to the 10th of next month
+    const nextMonth = currentMonth === 11 ? 0 : currentMonth + 1;
+    const nextYear = currentMonth === 11 ? currentYear + 1 : currentYear;
+    return new Date(nextYear, nextMonth, 10, 0, 0, 0, 0).getTime();
+  }
+
   function updateCountdown() {
     const now = Date.now();
     let diff = targetTime - now;
 
-    // Reset when timer reaches 0
     if (diff <= 0) {
-      targetTime = now + TEN_DAYS_MS;
-      diff = TEN_DAYS_MS;
+      targetTime = getNextTargetDate();
+      diff = targetTime - now;
     }
 
     days = Math.floor(diff / (1000 * 60 * 60 * 24));
@@ -28,6 +45,7 @@
   let intervalId;
 
   onMount(() => {
+    targetTime = getNextTargetDate();
     updateCountdown();
     intervalId = setInterval(updateCountdown, 1000);
     return () => clearInterval(intervalId);
