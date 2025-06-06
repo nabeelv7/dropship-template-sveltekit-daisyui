@@ -18,7 +18,10 @@
   ];
 </script>
 
-<div id="faq" class="max-w-screen-lg mx-auto grid md:grid-cols-2 grid-cols-1 px-5">
+<div
+  id="faq"
+  class="max-w-screen-lg mx-auto grid md:grid-cols-2 grid-cols-1 px-5"
+>
   <div>
     <h1 class="text-4xl font-bold">FAQ</h1>
   </div>
