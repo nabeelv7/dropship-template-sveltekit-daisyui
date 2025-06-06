@@ -1,4 +1,5 @@
 <script>
+  import '@fontsource-variable/dm-sans';
   import Navbar from "$lib/components/Navbar.svelte";
   import "../app.css";
 
