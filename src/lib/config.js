@@ -6,41 +6,59 @@ export const config = {
   },
   products: [
     {
+      id: 1,
       title: "Product 1",
       price: 100,
-      image:
-        "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
+      image: [
+        "https://img.daisyui.com/images/stock/photo-1494232410401-ad00d5433cfa.webp",
+        "https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp",
+      ],
     },
     {
+      id: 2,
       title: "Product 2",
       price: 200,
-      image:
-        "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
+      image: [
+        "https://img.daisyui.com/images/stock/photo-1494232410401-ad00d5433cfa.webp",
+        "https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp",
+      ],
     },
     {
+      id: 3,
       title: "Product 3",
       price: 300,
-      image:
-        "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
-    },
-    {
-      title: "Product 4",
-      price: 400,
-      image:
-        "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
-    },
-    {
-      title: "Product 5",
-      price: 500,
-      image:
+      image: [
+        "https://img.daisyui.com/images/stock/photo-1494232410401-ad00d5433cfa.webp",
         "https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp",
+      ],
     },
-    {
-      title: "Product 6",
-      price: 600,
-      image:
-        "https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp",
-    },
+    // {
+    //   id: 4,
+    //   title: "Product 4",
+    //   price: 400,
+    //   image: [
+    //     "https://img.daisyui.com/images/stock/photo-1494232410401-ad00d5433cfa.webp",
+    //     "https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp",
+    //   ],
+    // },
+    // {
+    //   id: 5,
+    //   title: "Product 5",
+    //   price: 500,
+    //   image: [
+    //     "https://img.daisyui.com/images/stock/photo-1494232410401-ad00d5433cfa.webp",
+    //     "https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp",
+    //   ],
+    // },
+    // {
+    //   id: 6,
+    //   title: "Product 6",
+    //   price: 600,
+    //   image: [
+    //     "https://img.daisyui.com/images/stock/photo-1494232410401-ad00d5433cfa.webp",
+    //     "https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp",
+    //   ],
+    // },
   ],
   testimonials: [
     {

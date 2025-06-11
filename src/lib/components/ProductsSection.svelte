@@ -1,5 +1,17 @@
 <script>
   import { config } from "$lib/config";
+  import { fade } from "svelte/transition";
+
+  let activeImageIndex = {};
+
+  const showSecondImageDef = (id) => {
+    activeImageIndex[id] = 1;
+    activeImageIndex = { ...activeImageIndex };
+    setTimeout(() => {
+      activeImageIndex[id] = 0;
+      activeImageIndex = { ...activeImageIndex };
+    }, 500);
+  };
 </script>
 
 <div
@@ -7,38 +19,63 @@
   id="products"
 >
   {#each config.products as product}
-    <div class="card bg-base-100">
-      <figure>
-        <img
-          src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-          alt="Shoes"
-        />
+    <article
+      class="card bg-base-100"
+      on:mouseover={() => showSecondImageDef(product.id)}
+      on:focus={() => showSecondImageDef(product.id)}
+      role="region"
+      aria-label={`Product: ${product.title}`}
+    >
+      <figure class="w-full aspect-[4/3] overflow-hidden relative">
+        <a
+          href={`/products/${product.id}`}
+          class="block w-full h-full relative"
+        >
+          {#if activeImageIndex[product.id] === 0 || activeImageIndex[product.id] == null}
+            <img
+              src={product.image[0]}
+              alt={`picture of the product: ${product.title}`}
+              class="object-cover w-full h-full absolute top-0 left-0"
+              transition:fade
+            />
+          {/if}
+          {#if activeImageIndex[product.id] === 1}
+            <img
+              src={product.image[1]}
+              alt={`alternate picture of the product: ${product.title}`}
+              class="object-cover w-full h-full absolute top-0 left-0"
+              transition:fade
+            />
+          {/if}
+        </a>
       </figure>
+
       <div class="card-body space-y-4">
         <div class="flex">
-          <img src="star.svg" alt="&star;" class="h-6 w-6" />
-          <img src="star.svg" alt="&star;" class="h-6 w-6" />
-          <img src="star.svg" alt="&star;" class="h-6 w-6" />
-          <img src="star.svg" alt="&star;" class="h-6 w-6" />
-          <img src="star.svg" alt="&star;" class="h-6 w-6" />
+          {#each Array(5) as _, i}
+            <img src="star.svg" alt="★" class="h-6 w-6" />
+          {/each}
         </div>
         <h2 class="card-title text-2xl">{product.title}</h2>
         <p class="font-extrabold flex justify-between items-center">
-          <span class="font-bold line-through text-xl"
-            >${product.price + 0.35 * product.price}</span
-          >
+          <span class="font-bold line-through text-xl">
+            ${product.price + 0.35 * product.price}
+          </span>
           <span
             class="text-green-500 text-3xl text-shadow-md text-shadow-green-300"
-            >${product.price}</span
           >
+            ${product.price}
+          </span>
         </p>
         <div class="card-actions justify-end">
-          <button class="btn btn-block">View Information</button>
+          <a href={`/products/${product.id}`} class="btn btn-block"
+            >View Information</a
+          >
           <button class="btn btn-success btn-block"
             >Proceed to Checkout &rarr;</button
           >
         </div>
       </div>
-    </div>
+    </article>
   {/each}
 </div>
