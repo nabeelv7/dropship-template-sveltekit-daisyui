@@ -1,4 +1,6 @@
 <script>
+  import StarSvg from "./StarSVG.svelte";
+
   const avatars = [
     "https://img.daisyui.com/images/profile/demo/batperson@192.webp",
     "https://img.daisyui.com/images/profile/demo/spiderperson@192.webp",
@@ -16,11 +18,9 @@
       </p>
 
       <div class="flex justify-center gap-1">
-        <img src="star.svg" alt="Star" class="h-6 w-6" />
-        <img src="star.svg" alt="Star" class="h-6 w-6" />
-        <img src="star.svg" alt="Star" class="h-6 w-6" />
-        <img src="star.svg" alt="Star" class="h-6 w-6" />
-        <img src="star.svg" alt="Star" class="h-6 w-6" />
+        {#each Array(5) as _}
+          <StarSvg color="#f97316" />
+        {/each}
       </div>
 
       <div class="avatar-group -space-x-6 flex justify-center">

@@ -1,4 +1,6 @@
 <script>
+  import StarSvg from "$lib/components/StarSVG.svelte";
+
   let testimonials = [
     {
       name: "Akorn Veesle",
@@ -49,11 +51,9 @@
         class={`border ${i == 1 || i == 3 ? "bg-secondary text-secondary-content" : "bg-base-100"} p-7 rounded-box drop-shadow-lg flex flex-col justify-around gap-2 ${i == 1 || i == 3 ? "md:row-span-2" : ""}`}
       >
         <div class="flex">
-          <img src="star.svg" alt="&star;" class="h-6 w-6" />
-          <img src="star.svg" alt="&star;" class="h-6 w-6" />
-          <img src="star.svg" alt="&star;" class="h-6 w-6" />
-          <img src="star.svg" alt="&star;" class="h-6 w-6" />
-          <img src="star.svg" alt="&star;" class="h-6 w-6" />
+          {#each Array(5) as _}
+            <StarSvg color="#f97316" />
+          {/each}
         </div>
         <p class="italic text-xl">
           "{testimonial.quote}"
@@ -64,7 +64,11 @@
               <img src={testimonial.image} alt={testimonial.name} />
             </div>
           </div>
-          <p class={i == 1 || i == 3 ? "text-secondary-content" : "text-base-content/80"}>
+          <p
+            class={i == 1 || i == 3
+              ? "text-secondary-content"
+              : "text-base-content/80"}
+          >
             &nbsp;-&nbsp;{testimonial.name}
           </p>
         </div>

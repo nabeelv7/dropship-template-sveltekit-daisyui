@@ -4,10 +4,10 @@
   const TARGET_DAYS = [10, 20, 30];
 
   let targetTime;
-  let days = 0,
-    hours = 0,
-    minutes = 0,
-    seconds = 0;
+  let days = $state(0),
+    hours = $state(0),
+    minutes = $state(0),
+    seconds = $state(0);
 
   function getNextTargetDate() {
     const now = new Date();

@@ -1,8 +1,9 @@
 <script>
   import { config } from "$lib/config";
   import { fade } from "svelte/transition";
+  import StarSvg from "./StarSVG.svelte";
 
-  let activeImageIndex = {};
+  let activeImageIndex = $state({});
 
   const showSecondImageDef = (id) => {
     activeImageIndex[id] = 1;
@@ -21,8 +22,8 @@
   {#each config.products as product}
     <article
       class="card bg-base-100"
-      on:mouseover={() => showSecondImageDef(product.id)}
-      on:focus={() => showSecondImageDef(product.id)}
+      onmouseover={() => showSecondImageDef(product.id)}
+      onfocus={() => showSecondImageDef(product.id)}
       role="region"
       aria-label={`Product: ${product.title}`}
     >
@@ -53,7 +54,7 @@
       <div class="card-body space-y-4">
         <div class="flex">
           {#each Array(5) as _, i}
-            <img src="star.svg" alt="★" class="h-6 w-6" />
+            <StarSvg color="#f97316" />
           {/each}
         </div>
         <h2 class="card-title text-2xl">{product.title}</h2>

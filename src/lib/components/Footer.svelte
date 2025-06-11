@@ -3,7 +3,7 @@
     class="footer max-w-screen-lg mx-auto sm:footer-horizontal bg-neutral text-neutral-content p-10 mt-10"
   >
     <aside>
-      <img src="icon.png" alt="logo" class="h-10 w-10" />
+      <img sr="icon.png" alt="logo" class="h-10 w-10" />
       <p class="text-3xl font-extrabold">
         daisyUI
         <br />

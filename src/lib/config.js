@@ -13,6 +13,13 @@ export const config = {
         "https://img.daisyui.com/images/stock/photo-1494232410401-ad00d5433cfa.webp",
         "https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp",
       ],
+      keyfeatures: [
+        "Super Fast Rotation Speeds",
+        "Long Lasting Battery",
+        "Scent Diffuser for Freshness",
+        "Ultra Quiet Operation",
+        "Soft Ambient Night Light",
+      ],
     },
     {
       id: 2,
@@ -22,6 +29,13 @@ export const config = {
         "https://img.daisyui.com/images/stock/photo-1494232410401-ad00d5433cfa.webp",
         "https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp",
       ],
+      keyfeatures: [
+        "Super Fast Rotation Speeds",
+        "Long Lasting Battery",
+        "Scent Diffuser for Freshness",
+        "Ultra Quiet Operation",
+        "Soft Ambient Night Light",
+      ],
     },
     {
       id: 3,
@@ -30,6 +44,13 @@ export const config = {
       image: [
         "https://img.daisyui.com/images/stock/photo-1494232410401-ad00d5433cfa.webp",
         "https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp",
+      ],
+      keyfeatures: [
+        "Super Fast Rotation Speeds",
+        "Long Lasting Battery",
+        "Scent Diffuser for Freshness",
+        "Ultra Quiet Operation",
+        "Soft Ambient Night Light",
       ],
     },
     // {
