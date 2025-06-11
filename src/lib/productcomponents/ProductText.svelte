@@ -12,9 +12,11 @@
   };
 </script>
 
-<div class="flex flex-col gap-6">
+<div class="flex flex-col gap-6 max-w-md break-words">
   <!-- Product Title -->
-  <h1 class="text-4xl font-extrabold capitalize">{product?.title}</h1>
+  <h1 class="text-4xl font-extrabold capitalize">
+    {product?.title}
+  </h1>
 
   <!-- Key Features -->
   <ul class="flex flex-col gap-2 text-lg">

@@ -60,7 +60,7 @@
       <img
         src={images[selected]}
         alt="Selected Product"
-        class="w-full h-auto object-cover transition-transform duration-300 ease-in-out"
+        class="w-full aspect-square object-contain transition-transform duration-300 ease-in-out"
         style={`transform: scale(${isHovering ? 1.6 : 1}); transform-origin: ${zoomX}% ${zoomY}%;`}
       />
     </div>
