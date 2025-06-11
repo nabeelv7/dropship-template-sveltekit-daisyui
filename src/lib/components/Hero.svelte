@@ -9,6 +9,8 @@
     <h1 class="capitalize text-neutral-content py-3 font-extrabold">
       🎉 35% OFF ON ALL PRODUCTS
     </h1>
-    <CountDown />
+    <div class="px-3">
+      <CountDown />
+    </div>
   </div>
 </div>

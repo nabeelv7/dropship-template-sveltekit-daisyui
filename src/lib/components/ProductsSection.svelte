@@ -1,49 +1,12 @@
 <script>
-  let products = [
-    {
-      title: "Product 1",
-      price: 100,
-      image:
-        "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
-    },
-    {
-      title: "Product 2",
-      price: 200,
-      image:
-        "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
-    },
-    {
-      title: "Product 3",
-      price: 300,
-      image:
-        "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
-    },
-    {
-      title: "Product 4",
-      price: 400,
-      image:
-        "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
-    },
-    {
-      title: "Product 5",
-      price: 500,
-      image:
-        "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
-    },
-    {
-      title: "Product 6",
-      price: 600,
-      image:
-        "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
-    },
-  ];
+  import { config } from "$lib/config";
 </script>
 
 <div
   class="max-w-screen-lg mx-auto grid md:grid-cols-3 grid-cols-1 gap-5 py-5 items-center justify-between max-md:px-5 mb-5"
   id="products"
 >
-  {#each products as product}
+  {#each config.products as product}
     <div class="card bg-base-100">
       <figure>
         <img

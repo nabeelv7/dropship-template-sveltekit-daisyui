@@ -12,7 +12,9 @@
     <div class="grid md:grid-cols-2 grid-cols-1 gap-4">
       <div class="border border-error rounded-lg bg-error/10 p-5 max-w-md">
         <div class="w-full flex items-center justify-between">
-          <h1 class="text-2xl font-bold text-error">Average Massage Chairs</h1>
+          <h1 class="text-2xl font-bold text-error">
+            Average Massage<br />Chairs
+          </h1>
           <div
             class="bg-error rounded-full flex justify-center items-center p-5 aspect-square w-8 h-8 text-2xl text-black opacity-80"
           >
@@ -28,7 +30,9 @@
 
       <div class="border border-success rounded-lg bg-success/10 p-5 max-w-md">
         <div class="w-full flex items-center justify-between">
-          <h1 class="text-2xl font-bold text-success">Our Massage Chairs</h1>
+          <h1 class="text-2xl font-bold text-success">
+            Our Massage<br />Chairs
+          </h1>
           <div
             class="bg-success rounded-full flex justify-center items-center p-5 aspect-square w-8 h-8 text-2xl text-black opacity-80"
           >

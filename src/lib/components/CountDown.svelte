@@ -52,7 +52,7 @@
   });
 </script>
 
-<div class="grid auto-cols-max grid-flow-col gap-5 text-center bg-neutral">
+<div class="grid auto-cols-max grid-flow-col sm:gap-5 gap-1 text-center bg-neutral">
   <div class="bg-neutral rounded-box text-neutral-content flex flex-col p-2">
     <span class="countdown text-shadow-sm text-shadow-pink-500 text-5xl">
       <span style={`--value:${days}`} aria-live="polite" aria-label={days}
