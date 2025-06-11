@@ -33,16 +33,16 @@
           class="block w-full h-full relative"
         >
           {#if activeImageIndex[product.id] === 0 || activeImageIndex[product.id] == null}
-            <img
-              src={product.image[0]}
+            <enhanced:img
+              src="/static/product1/1.jpg"
               alt={`picture of the product: ${product.title}`}
               class="object-cover w-full h-full absolute top-0 left-0"
               transition:fade
             />
           {/if}
           {#if activeImageIndex[product.id] === 1}
-            <img
-              src={product.image[1]}
+            <enhanced:img
+              src="/static/product1/2.jpg"
               alt={`alternate picture of the product: ${product.title}`}
               class="object-cover w-full h-full absolute top-0 left-0"
               transition:fade

@@ -9,10 +9,7 @@ export const config = {
       id: 1,
       title: "Product 1",
       price: 100,
-      image: [
-        "https://img.daisyui.com/images/stock/photo-1494232410401-ad00d5433cfa.webp",
-        "https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp",
-      ],
+      image: ["/product1/1.jpg", "/product1/2.jpg"],
       keyfeatures: [
         "Super Fast Rotation Speeds",
         "Long Lasting Battery",
@@ -25,10 +22,7 @@ export const config = {
       id: 2,
       title: "Product 2",
       price: 200,
-      image: [
-        "https://img.daisyui.com/images/stock/photo-1494232410401-ad00d5433cfa.webp",
-        "https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp",
-      ],
+      image: ["/product1/1.jpg", "/product1/2.jpg"],
       keyfeatures: [
         "Super Fast Rotation Speeds",
         "Long Lasting Battery",
@@ -41,10 +35,7 @@ export const config = {
       id: 3,
       title: "Product 3",
       price: 300,
-      image: [
-        "https://img.daisyui.com/images/stock/photo-1494232410401-ad00d5433cfa.webp",
-        "https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp",
-      ],
+      image: ["/product1/1.jpg", "/product1/2.jpg"],
       keyfeatures: [
         "Super Fast Rotation Speeds",
         "Long Lasting Battery",
@@ -58,8 +49,8 @@ export const config = {
     //   title: "Product 4",
     //   price: 400,
     //   image: [
-    //     "https://img.daisyui.com/images/stock/photo-1494232410401-ad00d5433cfa.webp",
-    //     "https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp",
+    //     "/product1",.jpg
+    //     "/product1/2.jpg",
     //   ],
     // },
     // {
@@ -67,8 +58,8 @@ export const config = {
     //   title: "Product 5",
     //   price: 500,
     //   image: [
-    //     "https://img.daisyui.com/images/stock/photo-1494232410401-ad00d5433cfa.webp",
-    //     "https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp",
+    //     "/product1",.jpg
+    //     "/product1/2.jpg",
     //   ],
     // },
     // {
@@ -76,8 +67,8 @@ export const config = {
     //   title: "Product 6",
     //   price: 600,
     //   image: [
-    //     "https://img.daisyui.com/images/stock/photo-1494232410401-ad00d5433cfa.webp",
-    //     "https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp",
+    //     "/product1",.jpg
+    //     "/product1/2.jpg",
     //   ],
     // },
   ],
