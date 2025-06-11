@@ -1,4 +1,9 @@
 <script>
+  import { page } from "$app/state";
+  import { config } from "$lib/config";
+
+  const product = config.products[page.params.id - 1];
+
   let count = 1;
 
   const increment = () => {
@@ -13,7 +18,7 @@
 </script>
 
 <div class="flex flex-col gap-5">
-  <h1 class="text-5xl font-extrabold capitalize">ThandaBox™</h1>
+  <h1 class="text-5xl font-extrabold capitalize">{product?.title}</h1>
 
   <div class="capitalize flex flex-col gap-3">
     <p>💨 Super Fast Rotation Speeds</p>
